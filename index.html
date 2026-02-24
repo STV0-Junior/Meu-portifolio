@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title
+      data-pt="Meu Portfólio Estevão Junior"
+      data-en="My Portfolio Estevão Junior"
+    ></title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Adicione antes do seu script.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body data-theme="light">
+    <header>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li>
+            <a href="#inicio" class="nav-link active" data-i18n="Inicio"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a href="#projetos" class="nav-link" data-i18n="Projetos"
+              >Projetos</a
+            >
+          </li>
+          <li>
+            <a href="#formacao" class="nav-link" data-i18n="Formação"
+              >Formação</a
+            >
+          </li>
+        </ul>
+        <div class="navbar-controls">
+          <button class="translate-toggle" aria-label="Alternar idioma">
+            <span class="translate-text">PT</span>
+          </button>
+          <button class="theme-toggle" aria-label="Alternar tema">
+            <span class="toggle-icon">☀️</span>
+            <span class="toggle-text">light</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="contato-flutuante">
+      <div class="balao-contato" onclick="toggleContato()">
+        <span class="icone-contato" data-i18n="mensagem_contato"
+          >Me mande uma mensagem!</span
+        >
+        <div class="contato-conteudo">
+          <a
+            href="https://wa.me/5585992069495"
+            target="_blank"
+            class="contato-link whatsapp"
+          >
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a
+            href="https://github.com/STV0-Junior"
+            target="_blank"
+            class="contato-link github"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/estevão-m-junior-0913a61a0/"
+            target="_blank"
+            class="contato-link linkedin"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <!-- Adicione este novo link para o e-mail -->
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=j.estevao.m.Junior@gmail.com&su=Contato%20via%20Portfólio&body=Olá%20Estevão,%20vim%20pelo%20seu%20portfólio..."
+            target="_blank"
+            class="contato-link email"
+          >
+            <i class="fas fa-envelope"></i> E-mail
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section id="inicio">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-header">
+            <img
+              src="imagens\minha foto 1.jpeg"
+              alt="Foto de Estevão Junior"
+              class="profile-photo"
+            />
+            <div class="header-text">
+              <h1 data-i18n="ola_eu_sou">OLÁ, EU SOU ESTEVÃO JUNIOR</h1>
+              <h2 data-i18n="desenvolvedor_full_stack">
+                Desenvolvedor Full-Stack
+              </h2>
+              <div class="sobre-mim">
+                <p data-i18n="descricao_sobre_mim"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="diferencial">
+        <h3 data-i18n="meu_diferencial">Meu diferencial:</h3>
+        <p data-i18n="texto_diferencial"></p>
+      </div>
+
+      <div class="habilidades">
+        <h3 data-i18n="minhas_tecnologias">Minhas tecnologias:</h3>
+        <div class="linguagens">
+          <!-- Front-end -->
+          <div class="stack">
+            <h4 data-i18n="front_end">Front-end</h4>
+            <div class="badges-row">
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML5"
+                />
+                <span>HTML5 <em data-i18n=""></em></span>
+              </div>
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3"
+                />
+                <span
+                  >CSS3 <em data-i18n="(Flexbox, Grid, Animations)"></em
+                ></span>
+              </div>
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+                <span>JavaScript <em data-i18n="(React/Vue)"></em></span>
+              </div>
+              <!-- Adicionando Flutter -->
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                  alt="Flutter"
+                />
+                <span>Flutter <em data-i18n="(Mobile)"></em></span>
+              </div>
+
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"
+                />
+                <span>TypeScript <em>(Front-end robusto)</em></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Back-end -->
+          <div class="stack">
+            <h4 data-i18n="back_end">Back-end</h4>
+            <div class="badges-row">
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                />
+                <span
+                  >Python
+                  <em data-pt="(para automação)" data-en="(for automation)"
+                    >(Embarcados)</em
+                  ></span
+                >
+              </div>
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  alt="PHP"
+                />
+                <span>PHP <em data-i18n=""></em></span>
+              </div>
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                  alt="C"
+                />
+                <span
+                  >C
+                  <em data-pt="(Embarcados)" data-en="(Embedded)"
+                    >(Embarcados)</em
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Banco de dados -->
+          <div class="stack">
+            <h4 data-i18n="banco_dados">Banco de Dados</h4>
+            <div class="badges-row">
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                />
+                <span>SQL <em data-i18n="(MySQL, PostgreSQL)"></em></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile e Outras -->
+          <div class="stack">
+            <h4 data-pt="Mobile & Outras" data-en="Mobile & Others">
+              Mobile & Outras
+            </h4>
+            <div class="badges-row">
+              <!-- Dart (usado com Flutter) -->
+              <div class="tech-badge">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
+                  alt="Dart"
+                />
+                <span>Dart <em data-i18n="(Flutter)"></em></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="esconder">
+      <div class="projetos-content">
+        <h2 class="projetos-titulo" data-i18n="meus_projetos">MEUS PROJETOS</h2>
+
+        <!-- Campo de Busca -->
+        <div class="projeto-busca-container">
+          <div class="projeto-busca">
+            <input
+              type="text"
+              id="busca-projetos"
+              data-i18n-placeholder="buscar_projetos"
+              placeholder="Buscar projetos..."
+              autocomplete="off"
+            />
+            <button id="btn-buscar" aria-label="Search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Sugestões -->
+          <div class="sugestoes-busca">
+            <span class="sugestao-titulo" data-i18n="sugestoes"
+              >Sugestões:</span
+            >
+            <div class="sugestoes-tags">
+              <span class="sugestao-tag">PHP</span>
+              <span class="sugestao-tag">E-commerce</span>
+              <span class="sugestao-tag">Arduino</span>
+              <span class="sugestao-tag">IoT</span>
+              <span class="sugestao-tag">MySQL</span>
+              <span class="sugestao-tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto HydroGuard -->
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <h3
+              data-pt="🏆 HydroGuard - Sistema Inteligente de Monitoramento Hidráulico"
+              data-en="🏆 HydroGuard - Intelligent Hydraulic Monitoring System"
+            >
+              🏆 HydroGuard - Sistema Inteligente de Monitoramento Hidráulico
+            </h3>
+            <span
+              class="projeto-premio"
+              data-pt="Melhor Projeto de Sustentabilidade em Hardware"
+              data-en="Best Sustainability Project in Hardware"
+            >
+              Melhor Projeto de Sustentabilidade em Hardware
+            </span>
+          </div>
+
+          <div class="projeto-body">
+            <div class="projeto-col">
+              <div class="projeto-descricao">
+                <p
+                  data-pt="Solução IoT premiada para prevenção de desperdícios hídricos e danos ambientais"
+                  data-en="Award-winning IoT solution for preventing water waste and environmental damage"
+                >
+                  Solução IoT premiada para prevenção de desperdícios hídricos e
+                  danos ambientais
+                </p>
+              </div>
+
+              <div class="projeto-features">
+                <h4 data-i18n="funcionalidades_principais">
+                  ⚡ Funcionalidades Principais
+                </h4>
+                <ul>
+                  <li data-i18n="monitoramento_tempo_real">
+                    Monitoramento em tempo real de vazão e consumo
+                  </li>
+                  <li data-i18n="detecao_vazamentos">
+                    Detecção proativa de vazamentos (95% precisão)
+                  </li>
+                  <li data-i18n="dualidade_interfaces">
+                    Dualidade de interfaces: LCD + Serial
+                  </li>
+                  <li data-i18n="simulacao_cenarios">
+                    Simulação adaptável de cenários (12h/24h)
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="projeto-col">
+              <div class="projeto-tech">
+                <h4 data-i18n="tecnologias">🛠️ Tecnologias</h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">Arduino UNO</span>
+                  <span class="tech-badge">C/C++ Embarcado</span>
+                  <span class="tech-badge">LoRaWAN</span>
+                  <span class="tech-badge">ISO 9001</span>
+                </div>
+              </div>
+
+              <div class="projeto-impacto">
+                <h4 data-i18n="impacto">📈 Impacto</h4>
+                <ul>
+                  <li data-i18n="reducao_agua">
+                    Redução de 40% no desperdício de água
+                  </li>
+                  <li data-i18n="adaptavel_cenarios">
+                    Adaptável para múltiplos cenários
+                  </li>
+                  <li data-i18n="autonomia_bateria">
+                    Autonomia de 72h em bateria 9V
+                  </li>
+                </ul>
+                <div class="projeto-links">
+                  <a
+                    href="https://github.com/STV0-Junior/Medidor-de-fluxo-e-monitoramento-de-agua-"
+                    class="projeto-link"
+                    data-pt="🐙 Repositório no GitHub"
+                    data-en="🐙 GitHub Repository"
+                  >
+                    🐙 Repositório no GitHub
+                  </a>
+                  <a
+                    href="https://youtu.be/Dgo8xCEVA1A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="projeto-link"
+                    data-pt="🎥 Vídeo Explicativo"
+                    data-en="🎥 Explanatory Video"
+                  >
+                    🎥 Vídeo Explicativo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carrossel (sem alterações) -->
+          <div class="carrossel-container">
+            <div class="carrossel">
+              <!-- Slide 0 (Imagem) -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="/imagens/projeto hydroguard/HydroGuard-premio.png"
+                  alt="HydroGuard-premio"
+                />
+              </div>
+              <!-- Slide 1 (Imagem) -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="/imagens/projeto hydroguard/hydroGuard.jpeg"
+                  alt="HydroGuard"
+                />
+              </div>
+              <!-- Slide 1 (Imagem) -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="/imagens/projeto hydroguard/WhatsApp Image 2025-03-31 at 09.49.28.jpeg"
+                  alt="HydroGuard"
+                />
+              </div>
+
+              <!-- Slide 2 (Vídeo) -->
+              <div class="carrossel-slide">
+                <video controls muted loop>
+                  <source
+                    src="/imagens/projeto hydroguard/hydroGuard (1).mp4"
+                    type="video/mp4"
+                  />
+                  Seu navegador não suporta vídeos.
+                </video>
+              </div>
+
+              <!-- Slide 3 (Vídeo) -->
+              <div class="carrossel-slide">
+                <video controls muted loop>
+                  <source
+                    src="/imagens/projeto hydroguard/hydroGuard (2).mp4"
+                    type="video/mp4"
+                  />
+                  Seu navegador não suporta vídeos.
+                </video>
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="carrossel-btn anterior">&lt;</button>
+            <button class="carrossel-btn proximo">&gt;</button>
+
+            <!-- Indicadores de slide -->
+            <div class="carrossel-indicadores">
+              <span class="indicador ativo"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto E-commerce Full Stack -->
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <h3
+              data-pt="🛒 E-commerce Full Stack"
+              data-en="🛒 Full Stack E-commerce"
+            >
+              🛒 E-commerce Full Stack
+            </h3>
+            <span
+              class="projeto-premio"
+              data-pt="Sistema Completo de Gerenciamento"
+              data-en="Complete Management System"
+            >
+              Sistema Completo de Gerenciamento
+            </span>
+          </div>
+
+          <div class="projeto-body">
+            <div class="projeto-col">
+              <div class="projeto-features">
+                <h4 data-i18n="features_principais">📋 Features Principais</h4>
+                <ul>
+                  <li data-i18n="gerenciamento_produtos">
+                    Gerenciamento de produtos com categorização
+                  </li>
+                  <li data-i18n="upload_imagens">
+                    Upload de imagens via drag-and-drop
+                  </li>
+                  <li data-i18n="controle_estoque">
+                    Controle de estoque por tamanhos
+                  </li>
+                  <li data-i18n="painel_admin">
+                    Painel administrativo intuitivo
+                  </li>
+                  <li data-i18n="exportacao_dados">
+                    Exportação de dados para CSV
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="projeto-col">
+              <div class="projeto-tech">
+                <h4 data-i18n="tecnologias">🛠️ Tecnologias</h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">PHP</span>
+                  <span class="tech-badge">MySQL</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">HTML5/CSS3</span>
+                </div>
+              </div>
+
+              <div class="projeto-seguranca">
+                <h4 data-i18n="mecanismos_seguranca">
+                  🔒 Mecanismos de Segurança
+                </h4>
+                <ul>
+                  <li data-i18n="autenticacao_criptografada">
+                    Autenticação com sessões criptografadas
+                  </li>
+                  <li data-i18n="protecao_injection">
+                    Proteção contra SQL injection/XSS
+                  </li>
+                  <li data-i18n="sanitizacao_inputs">
+                    Sanitização de inputs em tempo real
+                  </li>
+                  <li data-i18n="painel_admin_completo">
+                    Painel de administrador (adição, exclusão e modificação de
+                    produtos)
+                  </li>
+                </ul>
+              </div>
+              <div class="projeto-links">
+                <a
+                  href="https://dicazo.com.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projeto-link"
+                  data-pt="Site da Dicazo.com.br"
+                  data-en="Dicazo.com.br Website"
+                >
+                  Site da Dicazo.com.br
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Carrossel (sem alterações) -->
+          <div class="carrossel-container">
+            <div class="carrossel">
+              <!-- Slide 1 -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="imagens/e-comerce/Dicazo-aparelhos.png"
+                  alt="Painel Administrativo"
+                />
+              </div>
+              <!-- Slide 2 -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/e-comerce/Dicazo-tela-inicial.png"
+                  alt="Página de Produtos"
+                />
+              </div>
+              <!-- Slide 3 -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="imagens/e-comerce/Dicazo-nossa-historia.png"
+                  alt="nossa-historia"
+                />
+              </div>
+              <!-- Slide 4 -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/e-comerce/Dicazo-catalogo.png"
+                  alt="catalogo"
+                />
+              </div>
+              <!-- Slide 5 (opcional) -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/e-comerce/Dicazo-tela-inicial-mobile.png"
+                  alt="tela-inicial-mobile"
+                />
+              </div>
+              <!-- Slide 6 (opcional) -->
+              <div class="carrossel-slide">
+                <img src="imagens/e-comerce/dicazo-sidebar.png" alt="sidebar" />
+              </div>
+              <!-- Slide 7 (opcional) -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/e-comerce/Dicazo-carrinho (1).png"
+                  alt="carrinho (1)"
+                />
+              </div>
+              <!-- Slide 8 (opcional) -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/e-comerce/Dicazo-pagina-de-login.png"
+                  alt="pagina-de-login"
+                />
+              </div>
+              <!-- Slide 9 -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="imagens/e-comerce/Dicazo-gerenciar-banners-desktop.png"
+                  alt="gerenciar-banners-desktop"
+                />
+              </div>
+              <!-- Slide 10 -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/e-comerce/Dicazo-gerenciar-banner-mobile.png"
+                  alt="gerenciar-banner-mobile"
+                />
+              </div>
+              <!-- Slide 11 (opcional) -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/e-comerce/Dicazo-adição-de-novos-produtos.png"
+                  alt="adição-de-novos-produtos"
+                />
+              </div>
+              <!-- Slide 12 (opcional) -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/e-comerce/Dicazo-produtos+exportação-em-execel.png"
+                  alt="produtos+exportação-em-execel"
+                />
+              </div>
+              <!-- Slide 13 (opcional) -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/e-comerce/Dicazo-edição.png"
+                  alt="Dicazo-edição"
+                />
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="carrossel-btn anterior">&lt;</button>
+            <button class="carrossel-btn proximo">&gt;</button>
+
+            <!-- Indicadores de slide -->
+            <div class="carrossel-indicadores">
+              <span class="indicador ativo"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entrega de agua -->
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <h3
+              data-pt="🚀 Água Express - Sistema de Pedidos Inteligente"
+              data-en="🚀 Water Express - Smart Order System"
+            >
+              🚀 Água Express - Sistema de Pedidos Inteligente
+            </h3>
+            <span
+              class="projeto-premio"
+              data-pt="Solução otimizada para delivery de água"
+              data-en="Optimized water delivery solution"
+            >
+              Solução otimizada para delivery de água
+            </span>
+          </div>
+
+          <div class="projeto-body">
+            <div class="projeto-col">
+              <div class="projeto-descricao">
+                <p
+                  data-pt="Plataforma completa para gestão de pedidos e pagamentos de garrafões de água"
+                  data-en="Complete platform for water jug orders and payment management"
+                >
+                  Plataforma completa para gestão de pedidos e pagamentos de
+                  garrafões de água
+                </p>
+              </div>
+
+              <div class="projeto-features">
+                <h4
+                  data-i18n="funcionalidades_principais"
+                  data-pt="⚡ Funcionalidades Principais"
+                  data-en="⚡ Main Features"
+                >
+                  ⚡ Funcionalidades Principais
+                </h4>
+
+                <ul>
+                  <li
+                    data-i18n="formulario_interativo"
+                    data-pt="Formulário interativo com validação em tempo real"
+                    data-en="Interactive form with real-time validation"
+                  >
+                    Formulário interativo com validação em tempo real
+                  </li>
+
+                  <li
+                    data-i18n="calculadora_preco"
+                    data-pt="Calculadora automática de preço (R$ 5,00/garrafão)"
+                    data-en="Automatic price calculator ($5.00/jug)"
+                  >
+                    Calculadora automática de preço (R$ 5,00/garrafão)
+                  </li>
+
+                  <li
+                    data-i18n="pagamento_pix"
+                    data-pt="Integração com pagamento via PIX"
+                    data-en="PIX payment integration"
+                  >
+                    Integração com pagamento via PIX
+                  </li>
+
+                  <li
+                    data-i18n="whatsapp_integration"
+                    data-pt="Integração direta com WhatsApp (envio automático de pedidos)"
+                    data-en="Direct WhatsApp integration (automatic order sending)"
+                  >
+                    Integração direta com WhatsApp (envio automático de pedidos)
+                  </li>
+
+                  <li
+                    data-i18n="efeito_digitacao"
+                    data-pt="Efeito de digitação automática para demonstração"
+                    data-en="Auto-typing effect for demos"
+                  >
+                    Efeito de digitação automática para demonstração
+                  </li>
+
+                  <li
+                    data-i18n="transicoes_fluidas"
+                    data-pt="Transições fluidas entre seções"
+                    data-en="Smooth transitions between sections"
+                  >
+                    Transições fluidas entre seções
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="projeto-col">
+              <div class="projeto-tech">
+                <h4 data-i18n="tecnologias">🛠️ Tecnologias</h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS3</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">WhatsApp API</span>
+                  <span class="tech-badge">UI/UX Design</span>
+                </div>
+              </div>
+
+              <div class="projeto-impacto">
+                <h4
+                  data-i18n="impacto"
+                  data-pt="📈 Impacto"
+                  data-en="📈 Impact"
+                >
+                  📈 Impacto
+                </h4>
+                <ul>
+                  <li
+                    data-i18n="reducao_erros"
+                    data-pt="Redução de 90% em erros de preenchimento"
+                    data-en="90% reduction in form errors"
+                  >
+                    Redução de 90% em erros de preenchimento
+                  </li>
+                  <li
+                    data-i18n="tempo_processamento"
+                    data-pt="Processamento de pedidos 3x mais rápido"
+                    data-en="3x faster order processing"
+                  >
+                    Processamento de pedidos 3x mais rápido
+                  </li>
+                  <li
+                    data-i18n="experiencia_usuario"
+                    data-pt="Experiência do usuário otimizada"
+                    data-en="Optimized user experience"
+                  >
+                    Experiência do usuário otimizada
+                  </li>
+                  <li
+                    data-i18n="conversao_vendas"
+                    data-pt="Aumento na conversão de vendas"
+                    data-en="Increased sales conversion"
+                  >
+                    Aumento na conversão de vendas
+                  </li>
+                </ul>
+                <div class="projeto-links">
+                  <a
+                    href="https://brown-porcupine-109601.hostingersite.com"
+                    class="projeto-link"
+                    data-pt="📱 Ver Demonstração"
+                    data-en="📱 View Demo"
+                  >
+                    📱 Ver Demonstração
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carrossel de Imagens -->
+          <div class="carrossel-container">
+            <div class="carrossel">
+              <!-- Slide 1 (Formulário) -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="imagens/agua express/pagina-inicial.png"
+                  alt="Pagina inicial"
+                />
+              </div>
+
+              <!-- Slide 2 (Pagamento) -->
+              <div class="carrossel-slide">
+                <img src="imagens/agua express/pagina-inicial-2.png" alt"pagina
+                inicial 2">
+              </div>
+
+              <!-- Slide 3 (WhatsApp) -->
+              <div class="carrossel-slide">
+                <img src="imagens/agua express/pagina-inicial-preenchida.png"
+                alt"pagina inicial 2">
+              </div>
+
+              <!-- Slide 4 (Mobile) -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/agua express/pagina-de-pagamento.png"
+                  alt="sessao de pagamento"
+                />
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="carrossel-btn anterior">&lt;</button>
+            <button class="carrossel-btn proximo">&gt;</button>
+
+            <!-- Indicadores de slide -->
+            <div class="carrossel-indicadores">
+              <span class="indicador ativo"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto Pizzaria Deep -->
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <h3
+              data-pt="🍕 Pizzaria Deep - Sistema de Pedidos Online"
+              data-en="🍕 Pizzaria Deep - Online Order System"
+            >
+              🍕 Pizzaria Deep - Sistema de Pedidos Online
+            </h3>
+            <span
+              class="projeto-premio"
+              data-pt="Plataforma completa para pizzaria"
+              data-en="Complete platform for pizzeria"
+            >
+              Plataforma completa para pizzaria
+            </span>
+            <br /><span
+              class="projeto-status"
+              style="
+                background-color: #ffa500;
+                color: white;
+                padding: 3px 8px;
+                border-radius: 4px;
+                font-size: 0.8em;
+              "
+            >
+              Em desenvolvimento
+            </span>
+          </div>
+
+          <div class="projeto-body">
+            <div class="projeto-col">
+              <div class="projeto-descricao">
+                <p
+                  data-pt="Sistema de pedidos online para pizzaria com cardápio interativo e carrinho de compras"
+                  data-en="Online ordering system for pizzeria with interactive menu and shopping cart"
+                >
+                  Sistema de pedidos online para pizzaria com cardápio
+                  interativo e carrinho de compras
+                </p>
+              </div>
+
+              <div class="projeto-features">
+                <h4
+                  data-i18n="funcionalidades_principais"
+                  data-pt="⚡ Funcionalidades Principais"
+                  data-en="⚡ Main Features"
+                >
+                  ⚡ Funcionalidades Principais
+                </h4>
+
+                <ul>
+                  <li
+                    data-i18n="tela_boas_vindas"
+                    data-pt="Tela de boas-vindas animada com loader personalizado"
+                    data-en="Animated welcome screen with custom loader"
+                  >
+                    Tela de boas-vindas animada com loader personalizado
+                  </li>
+
+                  <li
+                    data-i18n="carrossel_promocoes"
+                    data-pt="Carrossel de promoções com transições suaves"
+                    data-en="Promotions carousel with smooth transitions"
+                  >
+                    Carrossel de promoções com transições suaves
+                  </li>
+
+                  <li
+                    data-i18n="categorias_interativas"
+                    data-pt="Categorias de produtos interativas"
+                    data-en="Interactive product categories"
+                  >
+                    Categorias de produtos interativas
+                  </li>
+
+                  <li
+                    data-i18n="sistema_pesquisa"
+                    data-pt="Sistema de pesquisa com sugestões"
+                    data-en="Search system with suggestions"
+                  >
+                    Sistema de pesquisa com sugestões
+                  </li>
+
+                  <li
+                    data-i18n="carrinho_compras"
+                    data-pt="Carrinho de compras funcional"
+                    data-en="Functional shopping cart"
+                  >
+                    Carrinho de compras funcional
+                  </li>
+
+                  <li
+                    data-i18n="design_responsivo"
+                    data-pt="Design responsivo para todos os dispositivos"
+                    data-en="Responsive design for all devices"
+                  >
+                    Design responsivo para todos os dispositivos
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="projeto-col">
+              <div class="projeto-tech">
+                <h4 data-i18n="tecnologias">🛠️ Tecnologias</h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS3</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">UI/UX Design</span>
+                  <span class="tech-badge">CSS Grid</span>
+                  <span class="tech-badge">Flexbox</span>
+                </div>
+              </div>
+
+              <div class="projeto-impacto">
+                <h4
+                  data-i18n="impacto"
+                  data-pt="📈 Impacto"
+                  data-en="📈 Impact"
+                >
+                  📈 Impacto
+                </h4>
+                <ul>
+                  <li
+                    data-i18n="experiencia_usuario"
+                    data-pt="Experiência do usuário intuitiva"
+                    data-en="Intuitive user experience"
+                  >
+                    Experiência do usuário intuitiva
+                  </li>
+                  <li
+                    data-i18n="navegacao_simples"
+                    data-pt="Navegação simples e direta"
+                    data-en="Simple and straightforward navigation"
+                  >
+                    Navegação simples e direta
+                  </li>
+                  <li
+                    data-i18n="processo_pedidos"
+                    data-pt="Processo de pedidos otimizado"
+                    data-en="Optimized ordering process"
+                  >
+                    Processo de pedidos otimizado
+                  </li>
+                  <li
+                    data-i18n="destaque_promocoes"
+                    data-pt="Destaque para promoções e ofertas"
+                    data-en="Highlight for promotions and offers"
+                  >
+                    Destaque para promoções e ofertas
+                  </li>
+                </ul>
+                <div class="projeto-links"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carrossel de Imagens -->
+          <div class="carrossel-container">
+            <div class="carrossel">
+              <!-- Slide 1 (Tela inicial) -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="/imagens/pizzaria/pizzaria 1.png"
+                  alt="Tela de boas-vindas da Pizzaria Deep"
+                />
+              </div>
+
+              <!-- Slide 2 (Categorias) -->
+              <div class="carrossel-slide">
+                <img
+                  src="/imagens/pizzaria/pizzaria 2.png"
+                  alt="Categorias de produtos"
+                />
+              </div>
+
+              <!-- Slide 3 (Produtos) -->
+              <div class="carrossel-slide">
+                <img
+                  src="/imagens/pizzaria/pizzaria 3.png"
+                  alt="Lista de pizzas"
+                />
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="carrossel-btn anterior">&lt;</button>
+            <button class="carrossel-btn proximo">&gt;</button>
+
+            <!-- Indicadores de slide -->
+            <div class="carrossel-indicadores">
+              <span class="indicador ativo"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conversor de Moedas -->
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <h3
+              data-pt="💱 Conversor de Moedas Inteligente"
+              data-en="💱 Smart Currency Converter"
+            >
+              💱 Conversor de Moedas Inteligente
+            </h3>
+            <span
+              class="projeto-premio"
+              data-pt="Solução avançada para conversão monetária em tempo real"
+              data-en="Advanced real-time currency conversion solution"
+            >
+              Solução avançada para conversão monetária em tempo real
+            </span>
+          </div>
+
+          <div class="projeto-body">
+            <div class="projeto-col">
+              <div class="projeto-descricao">
+                <p
+                  data-pt="Plataforma completa para conversão entre mais de 20 moedas internacionais com taxas atualizadas"
+                  data-en="Complete platform for conversion between 20+ international currencies with updated rates"
+                >
+                  Plataforma completa para conversão entre mais de 20 moedas
+                  internacionais com taxas atualizadas
+                </p>
+              </div>
+
+              <div class="projeto-features">
+                <h4
+                  data-i18n="funcionalidades_principais"
+                  data-pt="⚡ Funcionalidades Principais"
+                  data-en="⚡ Main Features"
+                >
+                  ⚡ Funcionalidades Principais
+                </h4>
+
+                <ul>
+                  <li
+                    data-i18n="interface_intuitiva"
+                    data-pt="Interface intuitiva e fácil de usar"
+                    data-en="Intuitive and user-friendly interface"
+                  >
+                    Interface intuitiva e fácil de usar
+                  </li>
+
+                  <li
+                    data-i18n="conversao_tempo_real"
+                    data-pt="Conversão em tempo real via API"
+                    data-en="Real-time conversion via API"
+                  >
+                    Conversão em tempo real via API
+                  </li>
+
+                  <li
+                    data-i18n="autocompletar"
+                    data-pt="Sistema de autocompletar para seleção de moedas"
+                    data-en="Autocomplete system for currency selection"
+                  >
+                    Sistema de autocompletar para seleção de moedas
+                  </li>
+
+                  <li
+                    data-i18n="validacao_dados"
+                    data-pt="Validação automática de dados de entrada"
+                    data-en="Automatic input validation"
+                  >
+                    Validação automática de dados de entrada
+                  </li>
+
+                  <li
+                    data-i18n="design_responsivo"
+                    data-pt="Design responsivo para todos os dispositivos"
+                    data-en="Responsive design for all devices"
+                  >
+                    Design responsivo para todos os dispositivos
+                  </li>
+
+                  <li
+                    data-i18n="animacoes_fluidas"
+                    data-pt="Animações fluidas e modernas"
+                    data-en="Smooth and modern animations"
+                  >
+                    Animações fluidas e modernas
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="projeto-col">
+              <div class="projeto-tech">
+                <h4 data-i18n="tecnologias">🛠️ Tecnologias</h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">HTML5</span>
+                  <span class="tech-badge">CSS3</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">ExchangeRate-API</span>
+                  <span class="tech-badge">UI/UX Design</span>
+                </div>
+              </div>
+
+              <div class="projeto-impacto">
+                <h4
+                  data-i18n="impacto"
+                  data-pt="📈 Impacto"
+                  data-en="📈 Impact"
+                >
+                  📈 Impacto
+                </h4>
+                <ul>
+                  <li
+                    data-i18n="precisao_conversao"
+                    data-pt="Conversões com precisão de 99.9%"
+                    data-en="99.9% accurate conversions"
+                  >
+                    Conversões com precisão de 99.9%
+                  </li>
+                  <li
+                    data-i18n="tempo_resposta"
+                    data-pt="Tempo de resposta inferior a 1 segundo"
+                    data-en="Response time under 1 second"
+                  >
+                    Tempo de resposta inferior a 1 segundo
+                  </li>
+                  <li
+                    data-i18n="experiencia_usuario"
+                    data-pt="Experiência do usuário otimizada"
+                    data-en="Optimized user experience"
+                  >
+                    Experiência do usuário otimizada
+                  </li>
+                  <li
+                    data-i18n="suporte_multiplas_moedas"
+                    data-pt="Suporte a mais de 20 moedas internacionais"
+                    data-en="Support for 20+ international currencies"
+                  >
+                    Suporte a mais de 20 moedas internacionais
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carrossel com o conversor -->
+          <div class="carrossel-container">
+            <div class="carrossel">
+              <!-- Slide 1 (Exemplo de conversão) -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/conversor de moedas/conversor (2).png"
+                  alt="Exemplo de conversão USD para BRL"
+                />
+              </div>
+
+              <!-- Slide 2 (Mobile) -->
+              <div class="carrossel-slide">
+                <img
+                  src="imagens/conversor de moedas/conversor (1).png"
+                  alt="Versão mobile do conversor"
+                />
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="carrossel-btn anterior">&lt;</button>
+            <button class="carrossel-btn proximo">&gt;</button>
+
+            <!-- Indicadores de slide -->
+            <div class="carrossel-indicadores">
+              <span class="indicador ativo"></span>
+              <span class="indicador"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto FileOrganizer -->
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <h3
+              data-pt="📂 FileOrganizer - Organizador Inteligente de Arquivos"
+              data-en="📂 FileOrganizer - Smart File Organizer"
+            >
+              📂 FileOrganizer - Organizador Inteligente de Arquivos
+            </h3>
+            <span
+              class="projeto-premio"
+              data-pt="Solução de Produtividade"
+              data-en="Productivity Solution"
+            >
+              Solução de Produtividade
+            </span>
+          </div>
+
+          <div class="projeto-body">
+            <div class="projeto-col">
+              <div class="projeto-descricao">
+                <p
+                  data-pt="Ferramenta automatizada para organização de arquivos em categorias intuitivas"
+                  data-en="Automated tool for organizing files into intuitive categories"
+                >
+                  Ferramenta automatizada para organização de arquivos em
+                  categorias intuitivas
+                </p>
+              </div>
+
+              <div class="projeto-features">
+                <h4
+                  data-pt="⚡ Funcionalidades Principais"
+                  data-en="⚡ Key Features"
+                >
+                  ⚡ Funcionalidades Principais
+                </h4>
+                <ul>
+                  <li
+                    data-pt="Organização automática por tipo de arquivo"
+                    data-en="Automatic organization by file type"
+                  >
+                    Organização automática por tipo de arquivo
+                  </li>
+                  <li
+                    data-pt="Interface amigável com seleção de pasta"
+                    data-en="User-friendly folder selection interface"
+                  >
+                    Interface amigável com seleção de pasta
+                  </li>
+                  <li
+                    data-pt="Suporte a 10+ categorias de arquivos"
+                    data-en="Support for 10+ file categories"
+                  >
+                    Suporte a 10+ categorias de arquivos
+                  </li>
+                  <li
+                    data-pt="Prevenção de sobrescrita de arquivos"
+                    data-en="File overwrite prevention"
+                  >
+                    Prevenção de sobrescrita de arquivos
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="projeto-col">
+              <div class="projeto-tech">
+                <h4 data-pt="🛠️ Tecnologias" data-en="🛠️ Technologies">
+                  🛠️ Tecnologias
+                </h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">Tkinter</span>
+                  <span class="tech-badge">PyInstaller</span>
+                  <span class="tech-badge">Sistema de Arquivos</span>
+                </div>
+              </div>
+
+              <div class="projeto-impacto">
+                <h4 data-pt="📈 Impacto" data-en="📈 Impact">📈 Impacto</h4>
+                <ul>
+                  <li
+                    data-pt="Economia de 90% do tempo de organização"
+                    data-en="90% time savings in organization"
+                  >
+                    Economia de 90% do tempo de organização
+                  </li>
+                  <li
+                    data-pt="Estrutura de pastas consistente"
+                    data-en="Consistent folder structure"
+                  >
+                    Estrutura de pastas consistente
+                  </li>
+                  <li
+                    data-pt="Facilidade de acesso aos arquivos"
+                    data-en="Easy file access"
+                  >
+                    Facilidade de acesso aos arquivos
+                  </li>
+                </ul>
+
+                <div class="projeto-links">
+                  <a
+                    href="https://github.com/STV0-Junior/Organizador_de_arquivos.git"
+                    class="projeto-link"
+                    data-pt="📱 Ver Demonstração"
+                    data-en="📱 View Demo"
+                  >
+                    📱 Ver Demonstração
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carrossel -->
+          <div class="carrossel-container">
+            <div class="carrossel">
+              <!-- Slide 1 (Imagem) -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="/imagens/oroganizador de arquivos/arquivos.png"
+                  alt="Tela inicial do FileOrganizer"
+                />
+              </div>
+
+              <!-- Slide 2 (Imagem) -->
+              <div class="carrossel-slide">
+                <img
+                  src="/imagens/oroganizador de arquivos/arquivos-2 (1).png"
+                  alt="Exemplo de pasta organizada"
+                />
+              </div>
+
+              <!-- Slide 3 (GIF) -->
+              <div class="carrossel-slide">
+                <img
+                  src="/imagens/oroganizador de arquivos/exe funcionando.png"
+                  alt="Demonstração do funcionamento"
+                />
+              </div>
+
+              <!-- Slide 2 (Imagem) -->
+              <div class="carrossel-slide">
+                <img
+                  src="/imagens/oroganizador de arquivos/pastas organizadas.png"
+                  alt="Exemplo de pasta organizada"
+                />
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="carrossel-btn anterior">&lt;</button>
+            <button class="carrossel-btn proximo">&gt;</button>
+
+            <!-- Indicadores de slide -->
+            <div class="carrossel-indicadores">
+              <span class="indicador ativo"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto Calculadora 3D -->
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <h3
+              data-pt="🧮 Calculadora 3D - Precificação para Impressão"
+              data-en="🧮 3D Calculator - Printing Pricing"
+            >
+              🧮 Calculadora 3D - Precificação para Impressão
+            </h3>
+            <span
+              class="projeto-premio"
+              data-pt="Solução Financeira"
+              data-en="Financial Solution"
+            >
+              Solução Financeira
+            </span>
+          </div>
+
+          <div class="projeto-body">
+            <div class="projeto-col">
+              <div class="projeto-descricao">
+                <p
+                  data-pt="Ferramenta completa para cálculo preciso de custos em impressões 3D"
+                  data-en="Complete tool for accurate 3D printing cost calculation"
+                >
+                  Ferramenta completa para cálculo preciso de custos em
+                  impressões 3D
+                </p>
+              </div>
+
+              <div class="projeto-features">
+                <h4
+                  data-pt="⚡ Funcionalidades Principais"
+                  data-en="⚡ Key Features"
+                >
+                  ⚡ Funcionalidades Principais
+                </h4>
+                <ul>
+                  <li
+                    data-pt="Cálculo baseado em tempo, material e margem de lucro"
+                    data-en="Calculation based on time, material and profit margin"
+                  >
+                    Cálculo baseado em tempo, material e margem de lucro
+                  </li>
+                  <li
+                    data-pt="Conversão automática de tempo (horas/minutos)"
+                    data-en="Automatic time conversion (hours/minutes)"
+                  >
+                    Conversão automática de tempo (horas/minutos)
+                  </li>
+                  <li
+                    data-pt="Histórico completo de cálculos realizados"
+                    data-en="Complete calculation history"
+                  >
+                    Histórico completo de cálculos realizados
+                  </li>
+                  <li
+                    data-pt="Configurações personalizáveis de custos"
+                    data-en="Customizable cost settings"
+                  >
+                    Configurações personalizáveis de custos
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="projeto-col">
+              <div class="projeto-tech">
+                <h4 data-pt="🛠️ Tecnologias" data-en="🛠️ Technologies">
+                  🛠️ Tecnologias
+                </h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">Tkinter</span>
+                  <span class="tech-badge">PyInstaller</span>
+                  <span class="tech-badge">JSON</span>
+                </div>
+              </div>
+
+              <div class="projeto-impacto">
+                <h4 data-pt="📈 Impacto" data-en="📈 Impact">📈 Impacto</h4>
+                <ul>
+                  <li
+                    data-pt="Precificação precisa de projetos 3D"
+                    data-en="Accurate 3D project pricing"
+                  >
+                    Precificação precisa de projetos 3D
+                  </li>
+                  <li
+                    data-pt="Controle financeiro detalhado"
+                    data-en="Detailed financial control"
+                  >
+                    Controle financeiro detalhado
+                  </li>
+                  <li
+                    data-pt="Otimização do tempo de cálculo"
+                    data-en="Calculation time optimization"
+                  >
+                    Otimização do tempo de cálculo
+                  </li>
+                </ul>
+
+                <div class="projeto-links">
+                  <a
+                    href="https://github.com/STV0-Junior/Calculadora-3D---Precifica-o-para-Impress-o.git"
+                    class="projeto-link"
+                    data-pt="📱 Ver Código Fonte"
+                    data-en="📱 View Source Code"
+                  >
+                    📱 Ver Demonstração
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carrossel -->
+          <div class="carrossel-container">
+            <div class="carrossel">
+              <!-- Slide 1 (Imagem) -->
+              <div class="carrossel-slide ativo">
+                <img
+                  src="/imagens/Calculadora de impressao 3d/pasta do programa.png"
+                  alt="Interface principal da Calculadora 3D"
+                />
+              </div>
+
+              <!-- Slide 2 (Imagem) -->
+              <div class="carrossel-slide">
+                <img
+                  src="/imagens/Calculadora de impressao 3d/pagina inicial.png"
+                  alt="Aba de configurações"
+                />
+              </div>
+
+              <!-- Slide 3 (GIF) -->
+              <div class="carrossel-slide">
+                <img
+                  src="/imagens/Calculadora de impressao 3d/pagina de configuração.png"
+                  alt="Aba de histórico de configuração"
+                />
+              </div>
+
+              <!-- Slide 3 (GIF) -->
+              <div class="carrossel-slide">
+                <img
+                  src="/imagens/Calculadora de impressao 3d/pagina de historico.png"
+                  alt="Aba de histórico de historico"
+                />
+              </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <button class="carrossel-btn anterior">&lt;</button>
+            <button class="carrossel-btn proximo">&gt;</button>
+
+            <!-- Indicadores de slide -->
+            <div class="carrossel-indicadores">
+              <span class="indicador ativo"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+              <span class="indicador"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="esconder">
+      <div class="formacao-content">
+        <h2 class="formacao-titulo" data-i18n="minha_formacao">
+          MINHA FORMAÇÃO
+        </h2>
+
+        <!-- Linha 1: Formações Principais -->
+        <div class="formacao-principal">
+          <!-- Engenharia de Computação -->
+          <div class="formacao-card" data-atual="true">
+            <h3
+              data-pt="Engenharia de Computação"
+              data-en="Computer Engineering"
+            >
+              Engenharia de Computação
+            </h3>
+            <div class="formacao-detalhes">
+              <span>UNILAB</span>
+              <span data-pt="2023 - Presente" data-en="2023 - Present"
+                >2023 - Presente</span
+              >
+            </div>
+            <div class="formacao-badges">
+              <span class="formacao-badge" data-i18n="hardware">Hardware</span>
+              <span class="formacao-badge" data-i18n="programacao"
+                >Programação</span
+              >
+              <span class="formacao-badge" data-i18n="sistemas_embarcados"
+                >Sistemas Embarcados</span
+              >
+            </div>
+          </div>
+
+          <!-- Técnico em Química -->
+          <div class="formacao-card">
+            <h3
+              data-pt="Técnico em Química Integrado"
+              data-en="Integrated Chemistry Technician"
+            >
+              Técnico em Química Integrado
+            </h3>
+            <div class="formacao-detalhes">
+              <span>EEEP José Ivanilton Nocrato</span>
+              <span>2015 - 2018</span>
+            </div>
+            <div class="formacao-badges">
+              <span class="formacao-badge" data-i18n="analises_quimicas"
+                >Análises Químicas</span
+              >
+              <span class="formacao-badge" data-i18n="controle_qualidade"
+                >Controle de Qualidade</span
+              >
+              <span class="formacao-badge" data-i18n="estagio_nutec"
+                >Estágio no Nutec/UFC</span
+              >
+            </div>
+            <div class="formacao-experiencia">
+              <strong data-i18n="estagio">Estágio:</strong> Núcleo de Tecnologia
+              e Qualidade Industrial do Ceará
+            </div>
+          </div>
+        </div>
+
+        <!-- Linha 2: Cursos Complementares -->
+        <div class="formacao-card">
+          <h3 data-i18n="cursos_complementares">Cursos Complementares</h3>
+          <div class="certificados-grid">
+            <!-- Certificado 1 -->
+            <div class="certificado-card">
+              <div class="certificado-header">
+                <h4 data-pt="Computação em Nuvem" data-en="Cloud Computing">
+                  Computação em Nuvem
+                </h4>
+                <span class="certificado-empresa"
+                  >Santander | MIT Professional Education</span
+                >
+              </div>
+              <div class="certificado-detalhes">
+                <span
+                  class="certificado-data"
+                  data-pt="Concluído: 04/04/2024"
+                  data-en="Completed: 04/04/2024"
+                  >Concluído: 04/04/2024</span
+                >
+                <span
+                  class="certificado-duracao"
+                  data-pt="8 horas"
+                  data-en="8 hours"
+                  >8 horas</span
+                >
+              </div>
+              <a
+                href="certificados/computação em nuvem.pdf"
+                target="_blank"
+                class="certificado-link"
+                data-pt="Visualizar Certificado"
+                data-en="View Certificate"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                  />
+                </svg>
+                Visualizar Certificado
+              </a>
+            </div>
+
+            <!-- Certificado 2 -->
+            <div class="certificado-card">
+              <div class="certificado-header">
+                <h4 data-pt="Negociação" data-en="Negotiation">Negociação</h4>
+                <span class="certificado-empresa">Santander</span>
+              </div>
+              <div class="certificado-detalhes">
+                <span
+                  class="certificado-data"
+                  data-pt="Concluído: 27/03/2024"
+                  data-en="Completed: 27/03/2024"
+                  >Concluído: 27/03/2024</span
+                >
+                <span
+                  class="certificado-duracao"
+                  data-pt="8 horas"
+                  data-en="8 hours"
+                  >8 horas</span
+                >
+              </div>
+              <a
+                href="certificados/negociação.pdf"
+                target="_blank"
+                class="certificado-link"
+                data-pt="Visualizar Certificado"
+                data-en="View Certificate"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                  />
+                </svg>
+                Visualizar Certificado
+              </a>
+            </div>
+
+            <!-- Certificado 3 - Redes Neurais Profundas -->
+            <div class="certificado-card">
+              <div class="certificado-header">
+                <h4
+                  data-pt="Introdução às Redes Neurais Profundas"
+                  data-en="Introduction to Deep Neural Networks"
+                >
+                  Introdução às Redes Neurais Profundas
+                </h4>
+                <span class="certificado-empresa">UNILAB</span>
+              </div>
+              <div class="certificado-detalhes">
+                <span
+                  class="certificado-data"
+                  data-pt="Concluído: 14/03/2024"
+                  data-en="Completed: 14/03/2024"
+                >
+                  Concluído: 14/03/2024
+                </span>
+                <span
+                  class="certificado-duracao"
+                  data-pt="2 horas"
+                  data-en="2 hours"
+                >
+                  6 horas
+                </span>
+              </div>
+              <a
+                href="certificados/redes neurais profundas.jpeg"
+                target="_blank"
+                class="certificado-link"
+                data-pt="Visualizar
+                Certificado"
+                data-en="View Certificate"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                  />
+                </svg>
+                Visualizar Certificado
+              </a>
+            </div>
+
+            
+            <!-- Certificado 4 - Flutter -->
+            <div class="certificado-card">
+              <div class="certificado-header">
+                <h4
+                  data-pt="Desenvolvimento Multiplataforma com Flutter"
+                  data-en="Multiplatform Development with Flutter"
+                >
+                  Curso Introdutorio a Desenvolvimento Multiplataforma com Flutter
+                </h4>
+                <span class="certificado-empresa">UNILAB</span>
+              </div>
+              <div class="certificado-detalhes">
+                <span
+                  class="certificado-data"
+                  data-pt="Concluído: 14/03/2024"
+                  data-en="Completed: 14/03/2024"
+                >
+                  Concluído: 14/03/2024
+                </span>
+                <span
+                  class="certificado-duracao"
+                  data-pt="4 horas"
+                  data-en="4 hours"
+                >
+                  8 horas
+                </span>
+              </div>
+              <a
+                href="certificados/flutter.jpeg"
+                target="_blank"
+                class="certificado-link"
+                data-pt="Visualizar Certificado"
+                data-en="View Certificate"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                  />
+                </svg>
+                Visualizar Certificado
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+      // Sistema de tradução apenas para a navbar
+
+      // Sistema de tradução unificado para navbar e balão de contato
+      const translations = {
+        pt: {
+          // Navbar
+          Inicio: "Início",
+          Projetos: "Projetos",
+          Formação: "Formação",
+
+          // Balão de contato
+          mensagem_contato: "Me mande uma mensagem!",
+          whatsapp: "WhatsApp",
+          github: "GitHub",
+          linkedin: "LinkedIn",
+        },
+        en: {
+          // Navbar
+          Inicio: "Home",
+          Projetos: "Projects",
+          Formação: "Education",
+
+          // Balão de contato
+          mensagem_contato: "Send me a message!",
+          whatsapp: "WhatsApp",
+          github: "GitHub",
+          linkedin: "LinkedIn",
+        },
+      };
+
+      // Função para atualizar todas as traduções
+      function updateAllTranslations(lang) {
+        // Atualiza navbar e balão de contato
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.getAttribute("data-i18n");
+          if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+          }
+        });
+
+        // Atualiza o texto do botão de tradução
+        const translateText = document.querySelector(".translate-text");
+        if (translateText) {
+          translateText.textContent = lang === "pt" ? "EN" : "PT";
+        }
+      }
+
+      // Evento do botão de tradução
+      document
+        .querySelector(".translate-toggle")
+        .addEventListener("click", () => {
+          const currentLang = document.documentElement.lang || "pt";
+          const newLang = currentLang === "pt" ? "en" : "pt";
+          document.documentElement.lang = newLang;
+          updateAllTranslations(newLang);
+        });
+
+      // Inicializa com português como padrão
+      document.documentElement.lang = "pt";
+      updateAllTranslations("pt");
+
+      function toggleContato() {
+        const balao = document.querySelector(".balao-contato");
+        balao.classList.toggle("aberto");
+      }
+
+      // Fechar ao clicar fora
+      document.addEventListener("click", (e) => {
+        const balao = document.querySelector(".balao-contato");
+        if (!balao.contains(e.target)) {
+          balao.classList.remove("aberto");
+        }
+      });
+    </script>
+  </body>
+</html>
