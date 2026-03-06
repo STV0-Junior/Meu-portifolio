@@ -35,6 +35,10 @@ const i18nextConfig = {
             "meus_projetos": "MEUS PROJETOS",
             "buscar_projetos": "Buscar projetos...",
             "sugestoes": "Sugestões:",
+            "Inicio": "Início",
+            "Projetos": "Projetos",
+            "Formação": "Formação",
+            "mensagem_contato": "Me mande uma mensagem!",
 
             // Títulos e seções comuns
             "funcionalidades_principais": "⚡ Funcionalidades Principais",
@@ -117,6 +121,10 @@ const i18nextConfig = {
             "meus_projetos": "MY PROJECTS",
             "buscar_projetos": "Search projects...",
             "sugestoes": "Suggestions:",
+            "Inicio": "Home",
+            "Projetos": "Projects",
+            "Formação": "Education",
+            "mensagem_contato": "Send me a message!",
 
             // Títulos e seções comuns
             "funcionalidades_principais": "⚡ Main Features",
@@ -532,6 +540,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicia após 1s (opcional)
     setTimeout(animateEmoji, 1000);
 });
-
 
 
