@@ -171,10 +171,11 @@ const i18nextConfig = {
 // Inicialize o i18next
 i18next
   .use(i18nextBrowserLanguageDetector)
-  .use(i18nextHttpBackend)
   .init(i18nextConfig, function(err, t) {
     // Inicialização concluída, agora podemos usar a tradução
     updateContent();
+    updatePlaceholders();
+    document.documentElement.lang = i18next.language || 'pt';
   });
 
 // Função para atualizar todo o conteúdo com as traduções
@@ -211,8 +212,10 @@ function updatePlaceholders() {
 document.querySelector('.translate-toggle').addEventListener('click', () => {
   const newLang = i18next.language === 'pt' ? 'en' : 'pt';
   i18next.changeLanguage(newLang, (err, t) => {
-    if (err) return console.log('something went wrong loading', err);
+    if (err) return console.error('something went wrong loading', err);
     updateContent();
+    updatePlaceholders();
+    document.documentElement.lang = newLang;
   });
 });
 
@@ -240,6 +243,7 @@ document.querySelector('.translate-toggle').addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.querySelector('.theme-toggle');
     const body = document.body;
+    const balaoContato = document.querySelector('.balao-contato');
     
     // Verifica o tema salvo ou usa 'light' como padrão
     const savedTheme = localStorage.getItem('theme') || 'light';
@@ -307,6 +311,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Garanta que a seção inicial esteja visível ao carregar
     document.querySelector('#inicio').classList.add('mostrar');
+
+    if (balaoContato) {
+        balaoContato.addEventListener('click', function (e) {
+            e.stopPropagation();
+            balaoContato.classList.toggle('aberto');
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!balaoContato.contains(e.target)) {
+                balaoContato.classList.remove('aberto');
+            }
+        });
+    }
 });
 
 // Scroll suave para âncoras
@@ -425,8 +442,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Opcional: Focar no campo de busca quando a página carrega
-    buscaInput.focus();
+    // Mantém o foco apenas após interação do usuário.
 });
 
 
@@ -490,11 +506,6 @@ function openFullscreen(media) {
 // Inicializa quando o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', () => {
     setupFullscreen();
-    
-    // Se estiver usando múltiplos carrosséis
-    document.querySelectorAll('.carrossel-container').forEach(container => {
-        initCarrossel(container);
-    });
 });
 
     
