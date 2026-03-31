@@ -1073,7 +1073,7 @@ background: rgba(77, 171, 247, 0.15);
 /* Estilos para a seção de experiência  */
 /* ========== SEÇÃO EXPERIÊNCIAS ========== */
 .experiencias-content {
-  max-width: 1200px;
+  max-width: 800px;           /* Reduz a largura máxima para centralizar melhor */
   margin: 0 auto;
   padding: 2rem;
 }
@@ -1095,13 +1095,14 @@ background: rgba(77, 171, 247, 0.15);
   margin: 15px auto 0;
 }
 
+/* Grid agora em coluna única vertical */
 .experiencias-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
-/* Cards de experiência - igual aos cards de projeto/formação */
+/* Cards de experiência - mantém o mesmo estilo */
 .experiencia-card {
   background: var(--nav-bg);
   border-radius: 12px;
@@ -1109,6 +1110,7 @@ background: rgba(77, 171, 247, 0.15);
   box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(0, 102, 204, 0.1);
+  width: 100%;               /* Garante que ocupe toda largura disponível */
 }
 
 .experiencia-card:hover {
