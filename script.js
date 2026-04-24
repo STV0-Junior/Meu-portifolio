@@ -9,8 +9,9 @@ const i18nextConfig = {
             // Seção Início
             // Seção Início
             "ola_eu_sou": "OLÁ, EU SOU ESTEVÃO JUNIOR",
-            "desenvolvedor_full_stack": "Engenheiro de Computação | Full-Stack & Embarcados",
+            "desenvolvedor_full_stack": "Engenheiro de Computação | Desenvolvedor & Sistemas Embarcados",
             "descricao_sobre_mim": "Especialista em unir hardware e software com projetos premiados em IoT. Desenvolvo desde sistemas embarcados (Arduino, C/C++) até automações em Python e aplicações web completas. Conecto o mundo físico ao digital para criar soluções inovadoras e escaláveis.",
+            
             // Seção Diferencial
             "meu_diferencial": "Meu diferencial:",
             "texto_diferencial": "Ponte entre Hardware e Software com visão integrada de sistemas. Combino expertise em tecnologia embarcada (com projeto premiado em IoT) com desenvolvimento full-stack para criar soluções completas. Com foco em otimização de performance desde o circuito até a interface do usuário, com foco em sustentabilidade e escalabilidade. Além de alto conhecimento em Hardware.",
@@ -93,7 +94,7 @@ const i18nextConfig = {
 
             // Seção Início
             "ola_eu_sou": "HELLO, I'M ESTEVÃO JUNIOR",
-            "desenvolvedor_full_stack": "Computer Engineering | Full-Stack & Embedded",
+            "desenvolvedor_full_stack": "Computer Engineering | Developer & System Embedded",
             "descricao_sobre_mim": "Specialist in bridging hardware and software with award-winning IoT projects. I develop everything from embedded systems (Arduino, C/C++) to Python automations and full-stack web applications. I connect the physical to the digital to create innovative and scalable solutions.",
             
             // Seção Diferencial
