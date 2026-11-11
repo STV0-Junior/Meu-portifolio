@@ -1,6 +1,9 @@
 // ========== CONTADOR DE VISITAS COM JSONBIN.IO ==========
-const BIN_ID = '69d5910136566621a88bab6c';      // Substitua pelo seu Bin ID
-const API_KEY = '$2a$10$mnOBQtgdBqte6dE5yDq1bua3xBUKJSXhJYWqAOzLPCH1b8qFVYyHC';    // Substitua pela sua Master Key
+// ⚠️  CONFIGURE SUAS CREDENCIAIS ANTES DE USAR EM PRODUÇÃO ⚠️
+// Copie este arquivo para `contador_de_visitas.config.js` e preencha os valores,
+// ou defina as variáveis de ambiente JSONBIN_BIN_ID e JSONBIN_API_KEY.
+const BIN_ID  = (typeof JSONBIN_BIN_ID  !== 'undefined' ? JSONBIN_BIN_ID  : 'SEU_BIN_ID_AQUI');
+const API_KEY = (typeof JSONBIN_API_KEY !== 'undefined' ? JSONBIN_API_KEY : 'SUA_MASTER_KEY_AQUI');
 
 async function updateVisitCounter() {
   const hasVisited = sessionStorage.getItem('hasVisited');

@@ -1,0 +1,24 @@
+{
+  "name": "meu-portifolio",
+  "version": "1.0.0",
+  "description": "Portfólio pessoal de Estevão Junior - Engenheiro de Computação, IoT e Full-stack",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "lint": "npx eslint script.js contador_de_visitas.js egg.js",
+    "format": "npx prettier --write index.html script.js styles.css"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.0"
+  },
+  "dependencies": {
+    "i18next": "^23.11.0",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "chart.js": "^4.4.0"
+  },
+  "keywords": ["portfolio", "iot", "full-stack", "engineering"],
+  "author": "Estevão Junior",
+  "license": "MIT"
+}

@@ -3,191 +3,42 @@ const i18nextConfig = {
   lng: 'pt', // idioma padrão
   fallbackLng: 'pt',
   debug: false,
-  resources: {
-    pt: {
-        translation: {
-            // Seção Início
-            // Seção Início
-            "ola_eu_sou": "OLÁ, EU SOU ESTEVÃO JUNIOR",
-            "desenvolvedor_full_stack": "Engenheiro de Computação | Desenvolvedor & Sistemas Embarcados",
-            "descricao_sobre_mim": "Especialista em unir hardware e software com projetos premiados em IoT. Desenvolvo desde sistemas embarcados (Arduino, C/C++) até automações em Python e aplicações web completas. Conecto o mundo físico ao digital para criar soluções inovadoras e escaláveis.",
-            
-            // Seção Diferencial
-            "meu_diferencial": "Meu diferencial:",
-            "texto_diferencial": "Ponte entre Hardware e Software com visão integrada de sistemas. Combino expertise em tecnologia embarcada (com projeto premiado em IoT) com desenvolvimento full-stack para criar soluções completas. Com foco em otimização de performance desde o circuito até a interface do usuário, com foco em sustentabilidade e escalabilidade. Além de alto conhecimento em Hardware.",
-            
-            // Seção Habilidades
-            "minhas_tecnologias": "Minhas tecnologias:",
-            "front_end": "Front-end",
-            "back_end": "Back-end",
-            "banco_dados": "Banco de Dados",
-            
-            // Descrições de tecnologias
-            "html_desc": "",
-            "css_desc": "(Flexbox, Grid, Animations)",
-            "js_desc": "(React/Vue)",
-            "python_desc": "(Para automações)",
-            "php_desc": "",
-            "sql_desc": "(MySQL, PostgreSQL)",
-
-            //projetos
-
-            // Cabeçalho e busca
-            "meus_projetos": "MEUS PROJETOS",
-            "buscar_projetos": "Buscar projetos...",
-            "sugestoes": "Sugestões:",
-            "Inicio": "Início",
-            "Projetos": "Projetos",
-            "Formação": "Formação",
-            "mensagem_contato": "Me mande uma mensagem!",
-
-            // Títulos e seções comuns
-            "funcionalidades_principais": "⚡ Funcionalidades Principais",
-            "features_principais": "📋 Features Principais",
-            "tecnologias": "🛠️ Tecnologias",
-            "impacto": "📈 Impacto",
-            "mecanismos_seguranca": "🔒 Mecanismos de Segurança",
-
-            // HydroGuard
-            "monitoramento_tempo_real": "Monitoramento em tempo real de vazão e consumo",
-            "detecao_vazamentos": "Detecção proativa de vazamentos (95% precisão)",
-            "dualidade_interfaces": "Dualidade de interfaces: LCD + Serial",
-            "simulacao_cenarios": "Simulação adaptável de cenários (12h/24h)",
-            "reducao_agua": "Redução de 40% no desperdício de água",
-            "adaptavel_cenarios": "Adaptável para múltiplos cenários",
-            "autonomia_bateria": "Autonomia de 72h em bateria 9V",
-
-            // E-commerce
-            "gerenciamento_produtos": "Gerenciamento de produtos com categorização",
-            "upload_imagens": "Upload de imagens via drag-and-drop",
-            "controle_estoque": "Controle de estoque por tamanhos",
-            "painel_admin": "Painel administrativo intuitivo",
-            "exportacao_dados": "Exportação de dados para CSV",
-            "autenticacao_criptografada": "Autenticação com sessões criptografadas",
-            "protecao_injection": "Proteção contra SQL injection/XSS",
-            "sanitizacao_inputs": "Sanitização de inputs em tempo real",
-            "painel_admin_completo": "Painel de administrador (adição, exclusão e modificação de produtos)",
-
-            //formação
-
-            // Cabeçalho
-            "minha_formacao": "MINHA FORMAÇÃO",
-            
-            // Termos gerais
-            "hardware": "Hardware",
-            "programacao": "Programação",
-            "sistemas_embarcados": "Sistemas Embarcados",
-            "analises_quimicas": "Análises Químicas",
-            "controle_qualidade": "Controle de Qualidade",
-            "estagio_nutec": "Estágio no Nutec/UFC",
-            "estagio": "Estágio:",
-            "cursos_complementares": "Cursos Complementares",
-
-            //contato
-
-            "contato_titulo": "ENTRE EM CONTATO",
-            "contato_texto": "Estou aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato através dos canais abaixo:"
-        }
-    },
-    en: {
-        translation: {
-
-            // Seção Início
-            "ola_eu_sou": "HELLO, I'M ESTEVÃO JUNIOR",
-            "desenvolvedor_full_stack": "Computer Engineering | Developer & System Embedded",
-            "descricao_sobre_mim": "Specialist in bridging hardware and software with award-winning IoT projects. I develop everything from embedded systems (Arduino, C/C++) to Python automations and full-stack web applications. I connect the physical to the digital to create innovative and scalable solutions.",
-            
-            // Seção Diferencial
-            "meu_diferencial": "My differential:",
-            "texto_diferencial": "Bridge between Hardware and Software with an integrated systems vision. I combine expertise in embedded technology (with an award-winning IoT project) with full-stack development to create complete solutions. Focused on performance optimization from the circuit to the user interface, with an emphasis on sustainability and scalability. Plus deep hardware knowledge.",
-            
-            // Seção Habilidades
-            "minhas_tecnologias": "My technologies:",
-            "front_end": "Front-end",
-            "back_end": "Back-end",
-            "banco_dados": "Database",
-            
-            // Descrições de tecnologias
-            "html_desc": "",
-            "css_desc": "(Flexbox, Grid, Animations)",
-            "js_desc": "(React/Vue)",
-            "python_desc": "(For automations)",
-            "php_desc": "",
-            "sql_desc": "(MySQL, PostgreSQL)",
-
-            //projetos
-
-            // Cabeçalho e busca
-            "meus_projetos": "MY PROJECTS",
-            "buscar_projetos": "Search projects...",
-            "sugestoes": "Suggestions:",
-            "Inicio": "Home",
-            "Projetos": "Projects",
-            "Formação": "Education",
-            "mensagem_contato": "Send me a message!",
-
-            // Títulos e seções comuns
-            "funcionalidades_principais": "⚡ Main Features",
-            "features_principais": "📋 Key Features",
-            "tecnologias": "🛠️ Technologies",
-            "impacto": "📈 Impact",
-            "mecanismos_seguranca": "🔒 Security Mechanisms",
-
-            // HydroGuard
-            "monitoramento_tempo_real": "Real-time flow and consumption monitoring",
-            "detecao_vazamentos": "Proactive leak detection (95% accuracy)",
-            "dualidade_interfaces": "Dual interfaces: LCD + Serial",
-            "simulacao_cenarios": "Adaptable scenario simulation (12h/24h)",
-            "reducao_agua": "40% reduction in water waste",
-            "adaptavel_cenarios": "Adaptable to multiple scenarios",
-            "autonomia_bateria": "72h autonomy on 9V battery",
-
-            // E-commerce
-            "gerenciamento_produtos": "Product management with categorization",
-            "upload_imagens": "Image upload via drag-and-drop",
-            "controle_estoque": "Inventory control by sizes",
-            "painel_admin": "Intuitive admin panel",
-            "exportacao_dados": "Data export to CSV",
-            "autenticacao_criptografada": "Encrypted session authentication",
-            "protecao_injection": "Protection against SQL injection/XSS",
-            "sanitizacao_inputs": "Real-time input sanitization",
-            "painel_admin_completo": "Admin panel (add, delete and modify products)",
-
-            //formação
-
-            // Cabeçalho
-            "minha_formacao": "MY EDUCATION",
-            
-            // Termos gerais
-            "hardware": "Hardware",
-            "programacao": "Programming",
-            "sistemas_embarcados": "Embedded Systems",
-            "analises_quimicas": "Chemical Analysis",
-            "controle_qualidade": "Quality Control",
-            "estagio_nutec": "Internship at Nutec/UFC",
-            "estagio": "Internship:",
-            "cursos_complementares": "Additional Courses",
-
-            // Dentro do objeto de tradução en
-            "contato_titulo": "CONTACT ME",
-            "contato_texto": "I'm open to new opportunities and collaborations. Feel free to contact me through the channels below:",
-        
-            // 🔽 NOVA CHAVE ADICIONADA PARA O CONTADOR DE VISITAS (EN)
-            "Total de visitas": "Total visits"
-        }
-    }
-}
 };
 
-// Inicialize o i18next
-i18next
-  .use(i18nextBrowserLanguageDetector)
-  .init(i18nextConfig, function(err, t) {
-    // Inicialização concluída, agora podemos usar a tradução
-    updateContent();
-    updatePlaceholders();
-    document.documentElement.lang = i18next.language || 'pt';
-  });
+async function loadTranslations() {
+  try {
+    const [ptResp, enResp] = await Promise.all([
+      fetch('locales/pt/translation.json'),
+      fetch('locales/en/translation.json'),
+    ]);
+    const pt = await ptResp.json();
+    const en = await enResp.json();
+
+    i18nextConfig.resources = { pt: { translation: pt }, en: { translation: en } };
+
+    i18next
+      .use(i18nextBrowserLanguageDetector)
+      .init(i18nextConfig, function(err, t) {
+        if (err) return console.error('i18next init error:', err);
+        updateContent();
+        updatePlaceholders();
+        document.documentElement.lang = i18next.language || 'pt';
+      });
+  } catch (err) {
+    console.error('Erro ao carregar traduções:', err);
+    i18next
+      .use(i18nextBrowserLanguageDetector)
+      .init(i18nextConfig, function(err, t) {
+        if (err) return console.error('i18next init error:', err);
+        updateContent();
+        updatePlaceholders();
+        document.documentElement.lang = i18next.language || 'pt';
+      });
+  }
+}
+
+loadTranslations();
+
 
 // Função para atualizar todo o conteúdo com as traduções
 function updateContent() {
@@ -537,13 +388,12 @@ const knowledge = {
     banco:       "Trabalho com MySQL e PostgreSQL para bancos relacionais, e SQLite em projetos menores ou embarcados.",
     iot:         "Em IoT uso Arduino com C, sensores de vazão e outros periféricos. O HydroGuard é meu principal projeto nessa área — monitoramento de água em tempo real.",
     hydroguard:  "🏆 HydroGuard — Monitoramento de Vazão de Água (IoT)\nMeu projeto mais premiado. Monitora em tempo real o consumo de água usando Arduino UNO e sensor de vazão, reduzindo o desperdício em até 40%. Foi premiado como Melhor Projeto de Sustentabilidade em Hardware.\nÉ de baixo custo e pode ser instalado em qualquer ponto da rede hidráulica residencial.\nTecnologias: Arduino, C, sensor de vazão, IoT.",
-    dicazo: "🛒 Dicazo — E-commerce de Roupas Infantis\nE-commerce completo desenvolvido do zero. Possui painel administrativo, gestão de produtos, controle de estoque por tamanhos, upload de imagens, exportação CSV e proteção contra SQL Injection e XSS.\nTecnologias: PHP, MySQL, HTML5, CSS3, JavaScript.",    aguaexpress: "💧 Água Express — Pedidos de Água via WhatsApp + PIX\nSistema inteligente de pedidos com integração direta ao WhatsApp e pagamento via PIX. O cliente preenche o formulário, o valor é calculado automaticamente e o pedido vai pelo WhatsApp. Online em: https://brown-porcupine-109601.hostingersite.com\nTecnologias: HTML5, CSS3, JavaScript, WhatsApp, PIX.",
+    dicazo: "🛒 Dicazo — E-commerce de Roupas Infantis\nE-commerce completo desenvolvido do zero. Possui painel administrativo, gestão de produtos, controle de estoque por tamanhos, upload de imagens, exportação CSV e proteção contra SQL Injection e XSS.\nTecnologias: PHP, MySQL, HTML5, CSS3, JavaScript.",
     fileorganizer:"📁 FileOrganizer — Organizador Automático de Arquivos\nFerramenta desktop em Python que organiza arquivos por categoria (imagens, documentos, vídeos etc.). O usuário seleciona a pasta e o sistema cria as subpastas automaticamente. Versão .exe disponível no GitHub.\nTecnologias: Python, Tkinter.",
     calculadora3d:"📐 Calculadora 3D — Precificação para Impressão 3D\nCalcula o preço de impressões 3D considerando tempo, custo do material por kg, hora técnica e margem de lucro. Mantém histórico de cálculos.\nTecnologias: HTML5, CSS3, JavaScript.",
     longlifenutr: "🎬 LongLifeNutri — Automação de Vídeos com IA (EUA)\nProjeto freelance para empresa americana (nov/2025–mar/2026). Sistema Python que cria vídeos automaticamente a partir de textos: busca clipes, edita timeline, adiciona legendas e narração por TTS.\nTecnologias: Python, TTS, automação de vídeo, IA.",
-    pizzariadeep: "🍕 Pizzaria Deep — Cardápio Digital (em desenvolvimento)\nCardápio digital com carrossel de promoções, categorias, sistema de busca e design responsivo. Estou implementando o carrinho de compras e integração com API de pagamentos.\nTecnologias: HTML5, CSS3, JavaScript.",
     conversormoeda:"💱 Conversor de Moedas — Cotações em Tempo Real\nConversor web com ExchangeRate-API para cotações de mais de 20 moedas. Tem autocompletar, validação e design responsivo.\nTecnologias: HTML5, CSS3, JavaScript, ExchangeRate-API.",
-    projetos:    "Meus principais projetos:\n🏆 HydroGuard — IoT premiado de monitoramento de água\n🛒 Dicazo — E-commerce de academia completo\n💧 Água Express — Pedidos via WhatsApp + PIX\n🎬 LongLifeNutri — Automação de vídeos com IA (EUA)\n📁 FileOrganizer — Organizador de arquivos em Python\n📐 Calculadora 3D — Precificação para impressão 3D\n🍕 Pizzaria Deep — Cardápio digital (em dev)\n💱 Conversor de Moedas — Cotações em tempo real\n\nPergunte \"me faz um resumo do [nome]\" para saber mais!",
+    projetos:    "Meus principais projetos:\n🏆 HydroGuard — IoT premiado de monitoramento de água\n🛒 Dicazo — E-commerce de academia completo\n🎬 LongLifeNutri — Automação de vídeos com IA (EUA)\n📁 FileOrganizer — Organizador de arquivos em Python\n📐 Calculadora 3D — Precificação para impressão 3D\n💱 Conversor de Moedas — Cotações em tempo real\n\nPergunte \"me faz um resumo do [nome]\" para saber mais!",
   },
   en: {
     nome:        "My name is Estevão M. Junior, I'm 25 years old, from Guaiúba, Ceará, Brazil.",
@@ -570,13 +420,12 @@ const knowledge = {
     banco:       "I work with MySQL and PostgreSQL for relational databases, and SQLite for smaller or embedded projects.",
     iot:         "In IoT I use Arduino with C, flow sensors and other peripherals. HydroGuard is my main project — real-time water monitoring.",
     hydroguard:  "🏆 HydroGuard — Water Flow Monitoring (IoT)\nMy most awarded project. Monitors water consumption in real time using Arduino UNO and a flow sensor, reducing waste by up to 40%. Won Best Sustainability Hardware award. Low-cost and installable at any residential water point.\nTech: Arduino, C, flow sensor, IoT.",
-    dicazo: "🛒 Dicazo — Children's Clothing E-commerce\nFull e-commerce built from scratch. Features admin panel, product management, size-based stock, image upload, CSV export, SQL Injection and XSS protection.\nTech: PHP, MySQL, HTML5, CSS3, JavaScript.",    aguaexpress: "💧 Water Express — Order System with WhatsApp + PIX\nSmart water ordering system with WhatsApp integration and PIX payment. Customer fills a form, price is auto-calculated and the order is sent via WhatsApp. Live at: https://brown-porcupine-109601.hostingersite.com\nTech: HTML5, CSS3, JavaScript, WhatsApp, PIX.",
+    dicazo: "🛒 Dicazo — Children's Clothing E-commerce\nFull e-commerce built from scratch. Features admin panel, product management, size-based stock, image upload, CSV export, SQL Injection and XSS protection.\nTech: PHP, MySQL, HTML5, CSS3, JavaScript.",
     fileorganizer:"📁 FileOrganizer — Automatic File Organizer\nPython desktop tool that sorts files into categories automatically. User picks a folder, system creates subfolders. Executable (.exe) on GitHub.\nTech: Python, Tkinter.",
     calculadora3d:"📐 3D Calculator — 3D Print Pricing Tool\nCalculates 3D print prices using print time, material cost/kg, hourly rate and profit margin. Keeps calculation history.\nTech: HTML5, CSS3, JavaScript.",
     longlifenutr: "🎬 LongLifeNutri — AI Video Automation (USA)\nFreelance project for a US company (Nov/2025–Mar/2026). Python system that auto-creates videos from text: searches clips, edits timeline, adds synced captions and TTS narration.\nTech: Python, TTS, video automation, AI.",
-    pizzariadeep: "🍕 Pizzaria Deep — Digital Menu (in development)\nDigital menu with promotions carousel, categories, search and responsive design. Currently adding shopping cart and payment API.\nTech: HTML5, CSS3, JavaScript.",
     conversormoeda:"💱 Currency Converter — Real-Time Rates\nWeb converter using ExchangeRate-API for 20+ currencies. Features autocomplete, validation and responsive design.\nTech: HTML5, CSS3, JavaScript, ExchangeRate-API.",
-    projetos:    "My main projects:\n🏆 HydroGuard — Award-winning IoT water monitoring\n🛒 Dicazo — Full fitness e-commerce\n💧 Water Express — Orders via WhatsApp + PIX\n🎬 LongLifeNutri — AI video automation (US client)\n📁 FileOrganizer — Automatic file organizer in Python\n📐 3D Calculator — 3D print pricing tool\n🍕 Pizzaria Deep — Digital menu (in dev)\n💱 Currency Converter — Real-time exchange rates\n\nAsk \"tell me about [name]\" to learn more!",
+    projetos:    "My main projects:\n🏆 HydroGuard — Award-winning IoT water monitoring\n🛒 Dicazo — Full fitness e-commerce\n🎬 LongLifeNutri — AI video automation (US client)\n📁 FileOrganizer — Automatic file organizer in Python\n📐 3D Calculator — 3D print pricing tool\n💱 Currency Converter — Real-time exchange rates\n\nAsk \"tell me about [name]\" to learn more!",
   }
 };
 
@@ -604,12 +453,10 @@ const suggestions = {
 const related = {
   pt: {
     hydroguard:    [{ label: "🛒 Ver Dicazo",         query: "me faz um resumo do Dicazo" },        { label: "⚡ IoT / Arduino",     query: "me fala sobre IoT e Arduino" }],
-    dicazo:        [{ label: "💧 Água Express",       query: "me faz um resumo do Água Express" },  { label: "🛠️ Back-end usado",    query: "me conta sobre seu back-end" }],
-    aguaexpress:   [{ label: "🛒 Ver Dicazo",         query: "me faz um resumo do Dicazo" },        { label: "📞 Contato",           query: "como entrar em contato?" }],
+    dicazo:        [{ label: "🛠️ Back-end usado",    query: "me conta sobre seu back-end" },        { label: "📁 Ver projetos",      query: "quais são seus projetos?" }],
     fileorganizer: [{ label: "🎬 LongLifeNutri",      query: "me faz um resumo do LongLifeNutri" }, { label: "🐍 Python / Back-end", query: "me conta sobre seu back-end" }],
     calculadora3d: [{ label: "💱 Conversor de Moedas",query: "me faz um resumo do Conversor" },     { label: "📁 Ver projetos",      query: "quais são seus projetos?" }],
     longlifenutr:  [{ label: "🐍 Python",             query: "me conta sobre seu back-end" },       { label: "📁 Ver projetos",      query: "quais são seus projetos?" }],
-    pizzariadeep:  [{ label: "🛒 Ver Dicazo",         query: "me faz um resumo do Dicazo" },        { label: "🛠️ Front-end",         query: "me fala sobre seu front-end" }],
     conversormoeda:[{ label: "📐 Calculadora 3D",     query: "me faz um resumo da Calculadora 3D"}, { label: "📁 Ver projetos",      query: "quais são seus projetos?" }],
     tecnologias:   [{ label: "⚡ IoT / Arduino",      query: "me fala sobre IoT e Arduino" },       { label: "🛠️ Front-end",         query: "me fala sobre seu front-end" }],
     projetos:      [{ label: "🏆 HydroGuard",         query: "me faz um resumo do HydroGuard" },    { label: "🛒 Dicazo",            query: "me faz um resumo do Dicazo" }],
@@ -620,12 +467,10 @@ const related = {
   },
   en: {
     hydroguard:    [{ label: "🛒 See Dicazo",         query: "tell me about Dicazo" },              { label: "⚡ IoT / Arduino",     query: "tell me about IoT and Arduino" }],
-    dicazo:        [{ label: "💧 Water Express",      query: "tell me about Water Express" },       { label: "🛠️ Back-end",          query: "tell me about your back-end" }],
-    aguaexpress:   [{ label: "🛒 See Dicazo",         query: "tell me about Dicazo" },              { label: "📞 Contact",           query: "how can I contact you?" }],
+    dicazo:        [{ label: "🛠️ Back-end",          query: "tell me about your back-end" },        { label: "📁 Projects",          query: "what are your projects?" }],
     fileorganizer: [{ label: "🎬 LongLifeNutri",      query: "tell me about LongLifeNutri" },       { label: "🐍 Python / Back-end", query: "tell me about your back-end" }],
     calculadora3d: [{ label: "💱 Currency Converter", query: "tell me about the currency converter"},{ label: "📁 Projects",         query: "what are your projects?" }],
     longlifenutr:  [{ label: "🐍 Python",             query: "tell me about your back-end" },       { label: "📁 Projects",          query: "what are your projects?" }],
-    pizzariadeep:  [{ label: "🛒 See Dicazo",         query: "tell me about Dicazo" },              { label: "🛠️ Front-end",         query: "tell me about your front-end" }],
     conversormoeda:[{ label: "📐 3D Calculator",      query: "tell me about the 3D calculator" },   { label: "📁 Projects",          query: "what are your projects?" }],
     tecnologias:   [{ label: "⚡ IoT / Arduino",      query: "tell me about IoT and Arduino" },     { label: "🛠️ Front-end",         query: "tell me about your front-end" }],
     projetos:      [{ label: "🏆 HydroGuard",         query: "tell me about HydroGuard" },          { label: "🛒 Dicazo",            query: "tell me about Dicazo" }],
@@ -657,11 +502,9 @@ const keywordsMap = [
   { key: "iot",          words: [{ w: "iot", p: 3 }, { w: "arduino", p: 3 }, { w: "embarcado", p: 3 }, { w: "hardware", p: 2 }, { w: "sensor", p: 2 }, { w: "microcontrolador", p: 3 }] },
   { key: "hydroguard",   words: [{ w: "hydroguard", p: 3 }, { w: "vazao", p: 3 }, { w: "hydro", p: 2 }, { w: "water monitoring", p: 3 }, { w: "sustentabilidade", p: 2 }, { w: "premiado", p: 1 }] },
   { key: "dicazo",       words: [{ w: "dicazo", p: 3 }, { w: "ecommerce", p: 2 }, { w: "loja", p: 2 }, { w: "shop", p: 1 }] },
-  { key: "aguaexpress",  words: [{ w: "agua express", p: 3 }, { w: "water express", p: 3 }, { w: "pedido agua", p: 3 }, { w: "agua mineral", p: 2 }, { w: "pix", p: 2 }] },
   { key: "fileorganizer",words: [{ w: "fileorganizer", p: 3 }, { w: "file organizer", p: 3 }, { w: "organizar arquivo", p: 3 }, { w: "organizador", p: 2 }] },
   { key: "calculadora3d",words: [{ w: "calculadora 3d", p: 3 }, { w: "3d", p: 2 }, { w: "impressao 3d", p: 3 }, { w: "precificacao", p: 2 }, { w: "3d print", p: 3 }] },
   { key: "longlifenutr", words: [{ w: "longlifenutr", p: 3 }, { w: "longlife", p: 3 }, { w: "automacao de video", p: 3 }, { w: "video automation", p: 3 }, { w: "tts", p: 2 }] },
-  { key: "pizzariadeep", words: [{ w: "pizzaria deep", p: 3 }, { w: "pizzaria", p: 3 }, { w: "cardapio", p: 2 }, { w: "pizza", p: 2 }] },
   { key: "conversormoeda",words:[{ w: "conversor", p: 3 }, { w: "moeda", p: 3 }, { w: "cambio", p: 3 }, { w: "currency", p: 3 }, { w: "exchange", p: 2 }, { w: "cotacao", p: 2 }] },
   { key: "projetos",     words: [{ w: "projeto", p: 1 }, { w: "portfolio", p: 2 }, { w: "todos", p: 1 }, { w: "projects", p: 2 }, { w: "listar", p: 2 }, { w: "quais sao", p: 2 }] },
 ];
@@ -670,11 +513,9 @@ const keywordsMap = [
 const projectAliases = {
   "hydroguard": "hydroguard", "hydro guard": "hydroguard", "hydro": "hydroguard",
   "dicazo": "dicazo", "e-commerce": "dicazo", "ecommerce": "dicazo",
-  "agua express": "aguaexpress", "water express": "aguaexpress", "aguaexpress": "aguaexpress",
   "fileorganizer": "fileorganizer", "file organizer": "fileorganizer", "organizador": "fileorganizer",
   "calculadora 3d": "calculadora3d", "calculadora": "calculadora3d", "3d calculator": "calculadora3d",
   "longlife": "longlifenutr", "longlifenutr": "longlifenutr", "long life nutri": "longlifenutr",
-  "pizzaria deep": "pizzariadeep", "pizzaria": "pizzariadeep", "deep": "pizzariadeep",
   "conversor": "conversormoeda", "moeda": "conversormoeda", "currency converter": "conversormoeda",
 };
 
